@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {%load static%}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/survey.css' %}" type="text/css">
+    <title>CQC</title>
+</head>
+<body>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="/">Home</a></li>
+            <li class="page-item"><a class="page-link" href="/about">About</a></li>
+            <li class="page-item"><a class="page-link" href="/portfolio">Portfolio</a></li>
+            <li class="page-item"><a class="page-link" href="/interesting_finds">Interesting Finds</a></li>
+            <li class="page-item active"><a class="page-link" href="/survey_page">Contact Me</a></li>
+        </ul>
+    </nav>
+    <h2>Any particular questions coming to mind? Wanna work together?</h2>
+    <form action='/new_survey' class='survey_form' method='POST'>
+        {%csrf_token%}
+        <div class="form-group row">
+            <label for="Name" class="col-sm-4">Name</label>
+            <input type='text' name='Name' class="col-sm-6" required/>
+        </div>
+        <div class="form-group row">
+            <label for="Email" class="col-sm-4">Email</label>
+            <input type='text' name='email' class="col-sm-6" required/>
+        </div>
+        <div class="form-group row">
+            <label for="CQC" class="col-sm-4">Comments/Questions/Concerns</label>
+            <textarea type='text' name='CQC' class="col-sm-6" required></textarea>
+        </div>
+        <button type='submit' class='survey_button'>Submit!</button>
+    </form>
+    <footer class="contact-links">
+        <a href="https://www.linkedin.com/in/mark-tamura-a894601a3/"><img id="linkedin" src="https://www.freeiconspng.com/uploads/linkedin-logo-7.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/mark.tamura"><img id="facebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/256px-Facebook_icon.svg.png" alt="facebook"></a>
+        <a href="https://github.com/tamuramark1021"><img id="github" src="data:image/png;base64,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" alt="github"></a>
+    </footer>
+</body>
+</html>

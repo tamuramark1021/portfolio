@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(1, 75, 75);
+}
+.survey_form {
+  margin: 15px;
+  height: 400px;
+  width: auto;
+  background-color: rgb(2, 2, 126);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.survey_button {
+  height: 50px;
+  width: 200px;
+  align-self: center;
+}
+html,
+body {
+  height: 100%;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#linkedin,
+#facebook,
+#github {
+  margin: 5px;
+  max-height: 50px;
+  max-width: 50px;
+}
+.contact-links {
+  background-color: black;
+  text-align: center;
+}
+footer {
+  align-self: flex-end;
+}

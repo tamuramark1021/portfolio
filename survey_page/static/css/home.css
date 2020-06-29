@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(1, 75, 75);
+}
+li,
+ul {
+  background-color: black;
+}
+#container {
+  background-image: url("https://i.pinimg.com/originals/5b/8e/9e/5b8e9eb9d0863cb14d835e727fbb68d3.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+#home-name {
+  height: 850px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
