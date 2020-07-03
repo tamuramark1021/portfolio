@@ -1,5 +1,6 @@
 nav {
   display: flex;
+  padding-top: 15px;
   justify-content: center;
   background-color: rgb(1, 75, 75);
 }

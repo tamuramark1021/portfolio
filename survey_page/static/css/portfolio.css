@@ -1,5 +1,37 @@
 nav {
   display: flex;
+  padding-top: 15px;
+
   justify-content: center;
   background-color: rgb(1, 75, 75);
+}
+.container {
+  width: 100%;
+  height: 900px;
+  background-color: purple;
+  display: flex;
+  justify-content: space-evenly;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  width: 45%;
+  height: 300px;
+  border: solid black;
+  box-shadow: black;
+  color: rgb(255, 94, 0);
+  opacity: 75%;
+}
+p.swapi,
+p.jqv {
+  width: 50%;
+}
+#SWAPI {
+  background-image: url("https://www.reimarufiles.com/wp-content/uploads/2019/05/SWC2019-Banner-1024x613.jpg");
+}
+#JOKEQUOTEVOTE {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSasLyloRDa67pBLjYCZeP_yyAeD0-73nMi5cOfPc4PKmtRKvGTOlwM1cM2T0o7zf8YARBCO84AX3vLUwh3rD7cTtUH1s2AuRXUUAzwMlBmvYEELcIwPMz4pdYRQsHzsS1cDktNbSmhg4V6fPlujO-O5w0Whgzr1FzfpWZQ3wJsc9-qCX8vlp2APOo2RdTTzoHRufIGHki60l6SINHAysEsfj0oGxx-ybzOoeQwdMy0B2fZkSOG2ppEnlCtXS5wHHg-EAhuyuwTdRQdROuVTSE8QRe5oB4Z-whlPxtN0deBr9CT6ggpA_9HagH3Vwd-UQq2G0bzNCTs_zwg_-XzUMce1SVxh786RFl1QzmGFnVUzQIzDMPThcarBaBBCXghgALbLwclRZ3yfzFX5rYWkcwjeQUyOcyVBw1u3TF_09vardzUBIO-PJWZ87E&usqp=CAU");
+  background-size: cover;
 }
