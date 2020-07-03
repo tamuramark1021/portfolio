@@ -25,7 +25,7 @@ SECRET_KEY = '+^je1wvu9sagiu1ci^(76)%79#)06qsmq*dro)&@$y&)#1d2xn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tamuramark.pythonanywhere.com']
 
 
 # Application definition
